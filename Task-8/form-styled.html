@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+
+    body {
+        
+    }
+    form {
+        background-color: white;
+        width:600px;
+        height:600px;
+        border-radius:15px;
+        margin:20px auto;
+        position: relative;
+        border:2px solid lightblue;
+    }
+
+    h2 {
+        background-color: lightblue;
+        color:white;
+        text-align: center;
+        border-radius: 8px 8px 0 0;
+        padding:15px;
+        margin:0;
+        font-weight: normal;
+    }
+
+
+    .form-list-normal {
+        margin:20px 0 0 30px;
+    }
+
+
+    
+    input {
+        width: 80%;
+        height: 45px;
+        margin: 10px 0 0 0;
+        }
+    input.text_1 {
+        padding-left:50px;
+        }
+    label{
+        margin-left:15px
+    }
+
+        
+    .text{
+            margin-left: 50px;
+        }
+
+        textarea{
+            width:80%;
+            min-height:90px;
+            margin-top:10px;
+            font-size: 15px;
+            padding-left: 48px;
+            padding-top:10px;
+            
+            }
+
+        input:focus {
+            outline-color: blue;
+        
+        }
+
+        
+
+        textarea:focus {
+             outline-color: blue;
+
+        }
+
+        button {
+            width: 200px;
+            height: 45px;
+            padding: 0 0 0 0;
+            font-weight: bold;
+            color: white;
+            position:absolute;
+            left:200px;
+            bottom:20px;
+            border: 1px solid;
+            background: lightblue;
+            border-radius:10px;
+            }
+
+        button:focus {
+            outline-color: blue;
+        }
+        
+        
+
+        h2::before {
+                content: "";
+                width: 48px;
+                height: 48px;
+                position: absolute;
+                left: 175px;
+                top: 5px;
+                background-image: url(https://drive.google.com/uc?export=download&id=1hXSiEOzrZu_5-9yiZw8p0RYsGwSBzOYa);
+          
+        }
+
+        .name::before {
+                content: "";
+                width: 48px;
+                height: 48px;
+                position: absolute;
+                left: 32px;
+                top: 107px;
+                background-image: url(https://drive.google.com/uc?export=download&id=1hXSiEOzrZu_5-9yiZw8p0RYsGwSBzOYa);
+                background-position: 203px 0;
+                z-index: 1
+
+        }
+        .e-mail::before {
+                content: "";
+                width: 48px;
+                height: 48px;
+                position: absolute;
+                left: 32px;
+                top: 205px;
+                background-image: url(https://drive.google.com/uc?export=download&id=1hXSiEOzrZu_5-9yiZw8p0RYsGwSBzOYa);
+                background-position: 154px 0;
+             
+         }
+
+        .phone::before {
+                content: "";
+                width: 48px;
+                height: 48px;
+                position: absolute;
+                left: 32px;
+                top: 306px;
+                background-image: url(https://drive.google.com/uc?export=download&id=1hXSiEOzrZu_5-9yiZw8p0RYsGwSBzOYa);
+                background-position: 100px 0;
+             
+         }
+
+        .pen::before {
+                content: "";
+                width: 48px;
+                height: 48px;
+                position: absolute;
+                left: 32px;
+                top: 401px;
+                background-image: url(https://drive.google.com/uc?export=download&id=1hXSiEOzrZu_5-9yiZw8p0RYsGwSBzOYa);
+                background-position: 48px 0;
+                z-index: 1;
+        }
+
+        .form-list-small {
+            width:500px;
+            height:450px;
+        }
+
+        .form-list-small textarea {
+            width:80%;
+            min-height:60px;
+            margin:55px 0 0 0;
+            padding: 0 0 0 55px;
+        }
+
+        .form-list-small input{
+            width:50%;
+            height:45px; 
+            margin: 0 0 -16px 155px;
+        }
+        .form-list-small label{
+            position: absolute;
+            margin: 26px 0 0 0;
+        }
+
+        .form-list-small h2::before {
+            content: "";
+            left: 120px;
+            top: 5px;
+        }
+        .form-list-small .name::before {
+                content: "";
+                left: 185px;
+                top: 79px;
+        }
+        
+        .form-list-small .e-mail::before {
+            content: "";
+            left: 185px;
+            top: 135px;
+        }
+
+        .form-list-small .phone::before {
+            content: "";
+            left: 185px;
+            top: 189px;
+        }
+
+        .form-list-small .pen::before {
+            content: "";
+            left: 32px;
+            top: 295px;
+        }
+
+        button {
+            left:150px;
+        }
+
+    </style>
+
+    </head>
+  <body>
+
+    <form class="">
+
+    
+
+        <h2>Oбратная связь</h2>
+
+            <div class="form-list-normal name">
+                <div>
+                    <label for="name">Имя:</label>
+                    <div class="name"><input  class="text_1" id="name" type="" name="text" placeholder="введите ваше имя"></div>
+                </div>
+            </div>
+            
+            <div class="form-list-normal">
+                <label for="e-mail">Email:</label>
+                <div class="e-mail"><input class="text_1"  id="e-mail" type="" name="text" placeholder="введите e-mail"></div>
+            </div>
+            
+            <div class="form-list-normal">
+                <label for="tell">Телефон:</label>
+                <div class="phone"><input class="text_1"  id="tell" type="tel" name="tell" placeholder="введите номер телефона" pattern="8[0-9]{10}"></div>
+                </div>
+            </div>
+
+            
+            <div class="form-list-normal pen">
+                <label class="text-1" for="textarea">Сообщение:</label>
+                <textarea id="textarea" name="textarea" cols="40" rows="3" placeholder="текст сообщения"></textarea>
+                </div> 
+            </div>
+
+            <div>
+                <button id="button1id" name="button1id" >Отправить</button>
+            </div>
+
+ 
+    </form>
+   
+    
+  </body>
+</html>
