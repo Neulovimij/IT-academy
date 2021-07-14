@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block</title>
+
+    <style>
+    	body {
+    		margin: 0;
+    		background-color: cyan;
+    	}
+    	.one-block {
+    		height: 400px;
+    		width: 400px;
+    		background-color: yellow;
+    		margin: 50px auto;
+            box-sizing: border-box;
+    	}
+
+    	@media (max-width: 1280px) {
+    		.one-block {
+    			background-color: red;
+                box-sizing: border-box;
+            }
+    	}
+
+    	@media (max-width: 1024px) {
+    		.one-block {
+    			background-color: red;
+    			border-radius: 20%;
+                box-sizing: border-box;
+    		}
+
+    	}
+
+    	@media (max-width: 768px) {
+    		.one-block {
+    			background-color: yellow;
+    			border-radius: 20%;
+                box-sizing: border-box;
+    			}
+    		}
+		@media (max-width: 640px) {
+    		.one-block {
+    			background-color: yellow;
+    			border: 2px solid red;
+    			border-radius: 20%;
+                box-sizing: border-box;
+    			}
+    		}
+
+   		@media (max-width: 480px) {
+    		.one-block {
+    			background-color: yellow;
+    			border-radius: 50%;
+                box-sizing: border-box;
+    			}
+    		}	
+    		
+            @media (max-width: 400px) {
+            .one-block {
+                width: 100vw;
+                background-color: yellow;
+                border-radius: 50%;
+                box-sizing: border-box;
+                }
+            }   
+
+    		@media (max-width: 320px) {
+    		.one-block {
+    			background-color: yellow;
+    			border: none;
+    			border-radius: 0;
+                margin: 0;
+    			box-sizing: border-box;
+    			}
+    		}	
+    </style>
+
+
+    </head>
+
+
+  <body>
+  	<div class="one-block">
+  		
+
+  	</div>  
+
+	
+  </body>
+</html>

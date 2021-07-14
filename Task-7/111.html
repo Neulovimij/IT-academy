@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+                .container {
+            max-width: 980px;
+            padding: 15px 0;
+            margin: 0 auto;
+            background-color: red;
+          }
+
+          .container__item {
+            width: 23.5%;
+            margin: 0 1%;
+            height: 100px;
+            float: left;
+            background-color: yellow;
+          }
+
+          .container__item:first-child {
+            margin-left: 0;
+          }
+
+          .container__item:last-child {
+            margin-right: 0;
+          }
+
+          .clearfix:before,
+          .clearfix:after {
+            content: "";
+            display: table;
+          } 
+          .clearfix:after {
+            clear: both;
+          }
+                
+    </style>
+
+    </head>
+  <body>
+    <div class="container clearfix">
+        <div class="container__item"></div>
+        <div class="container__item"></div>
+        <div class="container__item"></div>
+        <div class="container__item"></div>
+    </div>
+  
+    </body>
+</html>
+
+
+
+
