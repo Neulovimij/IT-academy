@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+
+    body {
+        
+    }
+    form {
+            padding: 10px;
+        }
+    header {
+            background-color: lightblue;
+            margin: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+    .conteiner {
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            width: 500px;
+
+            margin: 0 0 0 0;
+            padding:  0px;
+            border: 2px solid blue;
+            background-color: #fff;
+
+        }
+
+    .conteiner h2 {
+            text-align: center;
+            margin: 0 0 0 40px;
+
+        }        
+
+    .conteiner input {
+              width: 80%;
+              height: 40px;
+              padding: 5px 10px 5px 50px;
+              font-size:20px;
+              font-family: Tahoma;
+
+        }
+
+
+
+      .list {
+            width: 400px;
+            margin-left: 50px;
+            
+
+
+      }
+      .display_inline {
+            display: inline-block;
+            
+          }
+          
+      
+
+      .text-center {
+            width: 200px;
+            margin: 0 auto;
+
+          }
+
+      .container input {
+            padding: 5px 10px 5px 40px;
+            margin-bottom: 30px;
+          }
+        
+        .text-1 {
+            width: 80%;
+            min-height: 100px;
+            max-height: 180px;
+            padding: 5px 10px 5px 50px;
+            resize: vertical;
+            font-size:20px;
+            font-family: Tahoma;
+
+        }
+
+
+        input:focus {
+            outline-color: blue;
+        
+        }
+
+        input:active {
+            border:1px solid blue;
+
+        }
+
+        textarea:focus {
+             outline-color: blue;
+
+        }
+
+        button {
+            width: 80%;
+            height: 30px;
+            padding: 0;
+            background-color: lightblue;
+            border:1px solid lightblue;
+            font-size:20px;
+            font-family: Tahoma;
+        }
+
+        button:focus {
+            outline-color: blue;
+        }
+        
+    
+
+        .house::before {
+                content: "";
+                width: 48px;
+                height: 48px;
+                position: absolute;
+                left: 130px;
+                top: 0px;
+                background-image: url(photo/sprite.png);
+          
+        }
+
+        .name::before {
+                content: "";
+                width: 48px;
+                height: 48px;
+                position: absolute;
+                left: 62px;
+                top: 78px;
+                background-image: url(photo/sprite.png);
+                background-position: 203px 0;
+        }
+        .e-mail::before {
+                content: "";
+                width: 48px;
+                height: 48px;
+                position: absolute;
+                left: 62px;
+                top: 168px;
+                background-image: url(photo/sprite.png);
+                background-position: 154px 0;
+             
+         }
+
+        .phone::before {
+                content: "";
+                width: 48px;
+                height: 48px;
+                position: absolute;
+                left: 62px;
+                top: 258px;
+                background-image: url(photo/sprite.png);
+                background-position: 100px 0;
+             
+         }
+
+        .pen::before {
+                content: "";
+                width: 48px;
+                height: 48px;
+                position: absolute;
+                left: 62px;
+                top: 343px;
+                background-image: url(photo/sprite.png);
+                background-position: 48px 0;
+         
+         }
+
+   
+    </style>
+
+    </head>
+  <body>
+
+<div>
+
+    <header><h2 class="house">Oбратная связь</h2></header>
+
+    <form class="border__size">
+        
+          
+
+            <div class="list name">
+                <label for="name">Имя:</label>
+                <div> <input  class=""id="name" type="" name="text" placeholder="введите ваше имя"></div>
+            </div>
+            <br>
+
+            <div class="list e-mail">
+                <label for="e-mail">Email:</label>
+                <div><input class="" id="e-mail" type="" name="text" placeholder="введите e-mail"></div>
+            </div>
+
+            <br>
+
+            <div class="list phone">
+                <label for="tell">Телефон:</label>
+                <div class="phone">
+                    <input  id="tell" type="tel" name="tell" placeholder="введите номер телефона" pattern="8[0-9]{10}">
+                </div>
+
+            </div>
+
+            <br>
+
+            <div class="list">
+                    <label for="textarea">Сообщение:</label>
+                    <div class="pen">
+                        <textarea class="text-1" id="textarea" name="textarea" cols="40" rows="3" placeholder="текст сообщения"></textarea>
+                    </div>
+
+            </div>
+
+
+
+
+                <div class="text-center">
+                    <button id="button1id" name="button1id" >Отправить</button>
+                   
+                </div>
+
+
+            </div>
+
+
+    </form>
+ </div>   
+	
+  </body>
+</html>
