@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+      .button_1 {
+        border-radius: 10px;
+        font-family: Courier New;
+        color: #white;
+        font-size: 30px;
+        background: #3498db;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+        }
+
+      .button_1:hover {
+        background: #2D98DF;
+        text-decoration: none;
+       }
+
+       .button_2 {
+          border-radius: 50px;
+          text-shadow: 4px 5px 0px #8B9092;
+          box-shadow: 0px 1px 3px #8B9092;
+          font-family: Arial;
+          color: white;
+          font-size: 29px;
+          background: #3498db;
+          padding: 10px 20px 10px 20px;
+          border: solid #1f628d 2px;
+          text-decoration: none;
+          }
+
+          .button_2:hover {
+            background: #74aacc;
+            text-decoration: none;
+         }
+
+          .button_3{            
+            background: #586975;
+            background-image: linear-gradient(to right, #586975, #15c29f);
+            border-radius: 18px;
+            text-shadow: 1px 1px 16px #0a080a;
+            box-shadow: 0px 1px 3px #0f060f;
+            font-family: Arial;
+            color: #ccb6cc;
+            font-size: 30px;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+
+          }
+          .button_3:hover {
+            background: #586975;
+            background-image: linear-gradient(to right, #586975, #3498db);
+            text-decoration: none;
+          }
+
+          .button_4{            
+            background: #52c7b7;
+            background-image: linear-gradient(to bottom, #52c7b7, #bcc215);
+            border-radius: 18px;
+            text-shadow: 1px 1px 16px #0a080a;
+            box-shadow: 0px 1px 3px red inset;
+            font-family: Arial;
+            color: #ccb6cc;
+            font-size: 30px;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+
+          }
+          .button_4:hover {
+            background: #586975;
+            background-image: linear-gradient(to bottom, #586975, #3498db);
+            text-decoration: none
+          }
+
+          .button_5{
+            border: 3px solid #218294;
+            font-size: 30px;
+            color: #218294;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 250px;
+            height: 60px;
+            display: block;
+            text-align: center;
+            line-height: 60px;
+            font-family: Arial, sans-serif;
+            position: relative;
+            transition: .5s;
+          }
+          .button_5::before,
+          .button_5::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: #218294;
+            top: 0;
+            left: -100%;
+            opacity: .5;
+            transition: .3s;
+            z-index: -1;
+
+          }
+          .button_5::after {
+            opacity: 1;
+            transition-delay: .2s;
+          }
+
+          .button_5:hover {
+            color: white;
+          }
+
+          .button_5:hover::before,
+          .button_5:hover::after{
+            left: 0;
+          }
+
+         .bc {
+          width: 300px;
+          height: 100px;
+          margin: 0 auto;
+         
+         }
+
+    </style>
+
+    </head>
+  <body>
+    
+    <div class="bc">
+      <button class="button_1">Привет</button>
+    </div>
+    <br>
+
+    <div class="bc">
+      <button class="button_2">Я Кнопка</button>
+    </div>
+    <br>
+    <div class="bc">
+      <button class="button_3">Я Кнопка</button>
+    </div>
+    <br>
+    <div class="bc">
+      <button class="button_4">Я Кнопка</button>
+    </div>
+    <br>
+
+
+    <div class="bc">
+      <a href="#" class="button_5">Кнопка</a>
+      
+    </div>
+
+
+	
+   </body>
+</html>

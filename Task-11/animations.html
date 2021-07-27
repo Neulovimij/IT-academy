@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+      img {
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 200px;
+        animation-name: rotation;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      @keyframes rotation {
+        0% {
+          transform:rotate(0deg);
+          }
+        100% {
+          transform:rotate(360deg);
+         } 
+      }
+
+ 
+      .welcome p {
+        animation-name: jump;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        text-transform: uppercase;
+        font-size: 40px;
+        display: block;
+        text-shadow: 0 0 5px rgba(27, 5, 5, 0.9);
+        
+        }
+
+
+        @keyframes jump {
+          0% {
+            transform: translateY(-45px);
+            animation-timing-function: ease-in;
+            
+          }
+            
+          100% {
+            transform: translateY(0px);
+            animation-timing-function: ease-in;
+            }
+        }
+
+        .grow {
+          width: 100px;
+          height: 100px;
+          background-color: #00f;
+          border-radius: 50%;
+          transform: scale(.85);
+          animation: grow 2s ease-in-out infinite;
+          }
+
+          @keyframes grow {
+            from {
+              transform: scale(.85);
+              }
+            50% {
+              transform: scale(1);
+              }
+            to {
+              transform: scale(.85);
+              }
+            }
+
+            .rotate {
+                width: 400px;
+                height: 300px;
+                background: #6d6d6d;
+                transition: all 0.3s ease;
+                animation: rotate 4s ease-in-out infinite;
+                }
+
+                @keyframes rotate {
+            from {
+              transform: rotateZ(0deg);
+              }
+            50% {
+              transform: rotateZ(10deg);
+              }
+            to {
+              transform: rotateZ(0deg);
+              }
+            }
+            .border-shadow {
+              width: 400px;
+              height: 300px;
+              background: #6d6d6d;
+              transition: all 0.3s ease;
+            }
+            
+            .dance:hover .border-shadow {
+              box-shadow: inset 0 0 0 20px #53ea93;
+              border-radius: 30%;
+            }
+
+    </style>
+
+    </head>
+  <body>
+    
+    <div>
+      <img src="koleso.png" alt="koleso">
+    </div>
+	
+    <br>
+
+    <div class="dance">
+
+      <div class="welcome">
+        <p>Привет!!!</p>
+      </div>
+
+      <br>
+
+      <div class="grow">
+        <p></p>
+      </div>
+      <br>
+
+      <div class="rotate">
+        <p></p>
+      </div>
+
+       <br>
+
+      <div class="border-shadow">
+        <p></p>
+      </div>
+
+    </div>
+
+
+
+   </body>
+</html>
