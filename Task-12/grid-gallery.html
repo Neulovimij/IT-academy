@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A PhotoGallery by Grid Layout</title>
+    <style>
+        
+        .container {
+            width: 100%;
+
+            
+
+        }
+        .photogallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 180px);
+            grid-gap: 5px;
+            grid-auto-flow: dense;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .big {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .horizontal { 
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+        .vertical {
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+        h1 {
+            text-align: center;
+        }
+        @media (max-width: 980px){
+            .photogallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, 180px);
+            grid-gap: 5px;
+            grid-auto-flow: dense;
+        }
+
+        }
+        @media (max-width: 760px){
+            .photogallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(8, 180px);
+            grid-gap: 5px;
+            grid-auto-flow: dense;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>A PhotoGallery by Grid Layout</h1>
+        <div class="photogallery">
+
+            <div class="big gallery__image-01">
+                <img src="https://drive.google.com/uc?export=view&id=1j5asx0eEbV5deIKxFvetZW-MuJa_YRRx" alt="image-01">
+            </div>
+
+            <div class="horizontal gallery__image-02">
+                <img src="https://drive.google.com/uc?export=view&id=11-OELtOW0kDkSRIwhRlGlD9PMbv2uO2M" alt="image-02">
+            </div>
+
+            <div>
+                <img src="https://drive.google.com/uc?export=view&id=1UsD0ttE-gfDw-LLC12r2YABTumylBtzd" alt="image-03">
+            </div>
+
+            <div class="horizontal gallery__image-03">
+                <img src="https://drive.google.com/uc?export=view&id=1q9Gp9WVwV_UZh4gjBnuQBxfaeLvBURzW" alt="image-04">
+            </div>
+            <div class="horizontal">
+                <img src="https://drive.google.com/uc?export=view&id=1C6KPwcc1Wwm0UCST1jG1knZbybVFWqhh" alt="image-05">
+            </div>
+            <div class="vertical">
+                <img src="https://drive.google.com/uc?export=view&id=1pXyeMsjsHpS_5li0XwLdKzsaQwU77xUY" alt="image-06">
+            </div>
+            <div>
+                <img src="https://drive.google.com/uc?export=view&id=1yw8Szc0ZLHBoEwImfACb7gD4vUETTrSh" alt="image-07">
+            </div>
+            <div class="vertical">
+                <img src="https://drive.google.com/uc?export=view&id=11-OELtOW0kDkSRIwhRlGlD9PMbv2uO2M" alt="image-08">
+            </div>
+            <div class="big">
+                <img src="https://drive.google.com/uc?export=view&id=1SSo1HpD2NLdCIQY9EeP05pkebelB7Dwh" alt="image-09">
+            </div>
+            <div>
+                <img src="https://drive.google.com/uc?export=view&id=19BiowjdvANP_zLcRQW_ZJhlHXtvrPmLt" alt="image-10">
+            </div>
+            <div class="vertical">
+                <img src="https://drive.google.com/uc?export=view&id=1-bXO5yjkCOnC1AH7_QuFSjMStiT99Lj6" alt="image-11">
+            </div>
+            <div>
+                <img src="https://drive.google.com/uc?export=view&id=1kXnEquA72ugOAm0xAab5W4iCMd5Qz5yn" alt="image-12">
+            </div>
+            <div>
+                <img src="https://drive.google.com/uc?export=view&id=1pXyeMsjsHpS_5li0XwLdKzsaQwU77xUY" alt="image-13">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
